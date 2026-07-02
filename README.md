@@ -20,3 +20,6 @@ Repositori ini berisi kode sumber aplikasi *Front-End* berbasis Flutter Web untu
 3. Buka terminal di dalam folder proyek ini, lalu jalankan perintah untuk mengambil dependensi paket:
    ```bash
    flutter pub get
+4. Pastikan server Back-End Laravel API Anda sudah aktif. Sesuaikan URL base API pada file lib/service/api_service.dart dengan alamat server lokal Anda (misal: http://127.0.0.1:8000/api/).
+5. Jalankan aplikasi menggunakan browser Chrome dengan menekan tombol F5 pada VS Code atau melalui perintah terminal:
+   flutter run -d chrome
