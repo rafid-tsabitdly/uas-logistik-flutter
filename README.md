@@ -1,17 +1,25 @@
-# uas_logistik
+# 📦 Aplikasi Sistem Logistik IT Berbasis IoT
 
-A new Flutter project.
+Aplikasi Sistem Logistik IT ini dirancang untuk manajemen inventaris perangkat keras dan pemantauan distribusi logistik secara *real-time*. Proyek ini dibangun menggunakan arsitektur *Client-Server* dengan **Flutter Web** sebagai antarmuka pengguna (*Front-End*) dan **Laravel REST API** sebagai penyedia data (*Back-End*).
 
-## Getting Started
+## 👤 Identitas Pengembang
+* **Nama:** Muhammad Rafid Tsabitdly
+* **NIM:** 241011701060
+* **Program Studi:** Sistem Informasi
+* **Mata Kuliah:** Pemrograman Berorientasi Objek 2 (PBO2)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Langkah-Langkah Instalasi Lengkap (Urutan Terstruktur)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### LANGKAH 1: Penyiapan Pangkalan Data (Database)
+1. Aktifkan **Laragon** atau **XAMPP** di komputer Anda.
+2. Buka alat manajemen database seperti **HeidiSQL** atau **phpMyAdmin**.
+3. Cari file bernama **`db_logistik_it.sql`** yang terletak di dalam repositori back-end.
+4. Lakukan **Import** file `.sql` tersebut ke dalam server database Anda. Skrip ini akan otomatis membuat struktur database bernama `db_logistik` beserta tabel dan data dummy inventaris di dalamnya.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### LANGKAH 2: Konfigurasi Server API (Back-End Laravel)
+1. Letakkan folder proyek Laravel ini ke dalam direktori server lokal Anda (misalnya di `C:\laragon\www\rest-api`).
+2. Buka terminal di dalam folder proyek Laravel tersebut, lalu jalankan perintah instalasi dependensi vendor:
+   ```bash
+   composer install
